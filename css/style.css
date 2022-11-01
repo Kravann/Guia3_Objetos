@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
+:root{
+    --violeta100: #841169;
+    --violeta200: #572174;
+    --azul100: #1b3fcd;
+    --azul200: #55a3f6;
+    --verde100: #1d9d59;
+    --verde200: #72b914;
+    --blanco100: #f9f9f9;
+    --negro100: #201e1e;
+}
+
+body{
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+}
+
+.linkTittle{
+    color: var(--violeta200);
+    text-decoration: none;
+}
+
+.contenedor_general{
+    width: 100%;
+    height: 100%;
+    background-color: var(--azul200);
+    color: var(--negro100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor_form{
+    height: 80vh;
+    display: flex;
+}
+
+.contenedor_cliente{
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor_empleado{
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cliente_form, .empleado_form{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    gap: 2rem;
+}
+
+label{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+input{
+    border: none;
+    outline: none;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    padding-left: .3rem;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.btn{
+    border: none;
+    width: 10rem;
+    height: 2rem;
+    background-color: var(--verde200);
+    color: var(--negro100);
+    font-weight: 800;
+    text-transform: lowercase;
+    transition: .3s;
+}
+
+.menssage_client, .menssage_employee{
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 1rem 0 1rem;
+    border-bottom: 2px solid var(--negro100);
+}
+
+.contenedor_buscador{
+    display: flex;
+    gap: .5rem;
+}
+
+.contenedor_btn_listar{
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+#listado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table{
+    margin-top: 1rem;
+    border-collapse: collapse;
+    border: 1px solid var(--violeta200);
+    font-size: 1.4678rem;
+}
+
+th{
+    padding: .3rem;
+    text-align: center;
+    border: 1px solid var(--violeta100);
+}
+
+td{
+    padding: .3rem;
+    text-align: center;
+    border: 1px solid var(--violeta200);
+}
